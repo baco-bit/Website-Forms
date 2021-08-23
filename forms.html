@@ -14,111 +14,113 @@
     <title>Document</title>
 </head>
 
-<body class="d-flex justify-content-center border border-1">
-    <form action="">
-        <div class="card m-4" style="width: 800px;">
-            <div class="card-header">
-                <h4>Payment Form Example</h4>
-            </div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="alert alert-danger" role="alert">
-                            Some fields are missing
+<body>
+    <div class="container">
+        <form class="container border border-1">
+            <div class="container card m-4 " style="width: 95%;">
+                <div class="card-header">
+                    <h4>Payment Form Example</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="alert alert-danger" role="alert">
+                                Some fields are missing
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-5">
-                        <label for="Card#" class="form-label">Card#</label>
-                        <input type="number" class="form-control" id="Card#" placeholder="XXXX-XXXX-XXXX">
-                    </div>
-                    <div class="col-md-3">
-                        <label for="CVC#" class="form-label">CVC#</label>
-                        <input type="number" class="form-control" id="CVC#" placeholder="0000">
-                    </div>
-                    <div class="col-md-4">
-                        <label for="Amount" class="form-label">Amount</label>
-                        <input type="number" class="form-control" id="Amount" placeholder="Amount">
-                    </div>
+                        <div class="col-md-5">
+                            <label for="Card#" class="form-label">Card#</label>
+                            <input type="number" class="form-control" id="Card#" placeholder="XXXX-XXXX-XXXX">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="CVC#" class="form-label">CVC#</label>
+                            <input type="number" class="form-control" id="CVC#" placeholder="0000">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="Amount" class="form-label">Amount</label>
+                            <input type="number" class="form-control" id="Amount" placeholder="Amount">
+                        </div>
 
-                    <div class="col-md-6">
-                        <label for="Card#" class="form-label">First Name</label>
-                        <input type="text" class="form-control" id="First Name">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="Last Name" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" id="Last Name">
-                    </div>
+                        <div class="col-md-6">
+                            <label for="Card#" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="First Name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Last Name" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="Last Name">
+                        </div>
 
-                    <div class="col-md-6">
-                        <label for="City" class="form-label">City</label>
-                        <input type="text" class="form-control" id="City">
-                    </div>
-                    <div class="col-md-3">
-                        <label for="State" class="form-label">State</label>
-                        <select class="form-select" aria-label="Default select example" id="State">
-                            <option selected>Pick a state</option>
-                            <option value="">State One</option>
-                            <option value="">State Two</option>
-                            <option value="">State Three</option>
-                        </select>
-                    </div>
+                        <div class="col-md-6">
+                            <label for="City" class="form-label">City</label>
+                            <input type="text" class="form-control" id="City">
+                        </div>
+                        <div class="col-md-3" id="optionState">
+                            <label for="State" class="form-label">State</label>
+                            <select class="form-select" aria-label="Default select example" id="State">
+                                <option selected>Pick a state</option>
+                                <option value="">State One</option>
+                                <option value="">State Two</option>
+                                <option value="">State Three</option>
+                            </select>
+                        </div>
 
-                    <div class="col-md-3">
-                        <label for="Postal Code" class="form-label">Postal Code</label>
-                        <input type="number" class="form-control" id="Postal Code">
-                    </div>
+                        <div class="col-md-3">
+                            <label for="Postal Code" class="form-label">Postal Code</label>
+                            <input type="number" class="form-control" id="Postal Code">
+                        </div>
 
 
-                    <div class="col-6">
-                        <label for="">We accept: </label>
-                        <div class="col-8">
-                            <div class="bg-secondary d-flex align-content-center"
-                                style="border-radius: 5px; padding-left: 2px; margin-bottom: 5px;">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio1" value="option1">
-                                    <label class="form-check-label" for="inlineRadio1"><i
-                                            class="fab fa-cc-visa"></i></label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio2" value="option2">
-                                    <label class="form-check-label" for="inlineRadio2"><i
-                                            class="fab fa-cc-mastercard"></i></label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio3" value="option3">
-                                    <label class="form-check-label" for="inlineRadio3"><i
-                                            class="fab fa-cc-diners-club"></i></label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio4" value="option4">
-                                    <label class="form-check-label" for="inlineRadio4"><i
-                                            class="fab fa-cc-amex"></i></label>
-
+                        <div class="col-6">
+                            <label for="">We accept: </label>
+                            <div class="col-8">
+                                <div class="bg-secondary d-flex align-content-center"
+                                    style="border-radius: 5px; padding-left: 2px; margin-bottom: 5px;">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><i
+                                                class="fab fa-cc-visa"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2"><i
+                                                class="fab fa-cc-mastercard"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio3" value="option3">
+                                        <label class="form-check-label" for="inlineRadio3"><i
+                                                class="fab fa-cc-diners-club"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio4" value="option4">
+                                        <label class="form-check-label" for="inlineRadio4"><i
+                                                class="fab fa-cc-amex"></i></label>
+    
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-6">
+                            <label>Message</label>
+                            <textarea class="form-control" cols="2" rows="3"></textarea>
+                        </div>
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <label>Message</label>
-                        <textarea class="form-control" cols="2" rows="3"></textarea>
-                    </div>
-
+                </div>
+                <div class="card-footer d-flex justify-content-end">
+                    <button class="btn btn-secondary mx-1">Cancel</button>
+                    <button class="btn btn-primary mx-1" type="submit">Send</button>
                 </div>
             </div>
-            <div class="card-footer d-flex justify-content-end">
-                <button class="btn btn-secondary mx-1">Cancel</button>
-                <button class="btn btn-primary mx-1">Send</button>
-            </div>
-        </div>
-    </form>
-
+        </form>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
